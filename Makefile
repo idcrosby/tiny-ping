@@ -1,4 +1,4 @@
-NAME = idcrosby/tinyping
+NAME = icrosby/tinyping
 INSTANCE = tinyping
 
 .PHONY: default build copy
