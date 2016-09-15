@@ -1,0 +1,10 @@
+FROM golang:1.6
+
+RUN mkdir /app
+COPY . /go/src/github.com/idcrosby/tinyping/
+
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o /app/main github.com/idcrosby/tinyping
+
+CMD ["/app/main", "-port=8080"]
+
+EXPOSE 8080
