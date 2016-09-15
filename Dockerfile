@@ -3,6 +3,6 @@ FROM busybox:1
 WORKDIR /
 EXPOSE 8080
 COPY app /
-ENV MSG="Welcome Ku-bies!"
+ENV MSG="Hello Kubernauts!"
 
 CMD ["/app", "-port=8080"]
